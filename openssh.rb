@@ -47,6 +47,7 @@ class Openssh < Formula
       url "https://gist.githubusercontent.com/giffels/adf16e08d007a4d633d5f1874e48a76b/raw/2ad8d66dbcfa383cd40fd8bc36fea0254e40c499/GSSAPITrustDNS.patch"
       sha256 "66aa9a73ac1233eaf3cc0ba9be4ad31780834f17ccbec43c08acb05d3b7bf47a"
     end
+  end
 
   def install
     ENV.append "CPPFLAGS", "-D__APPLE_SANDBOX_NAMED_EXTERNAL__" if OS.mac?
